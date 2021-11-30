@@ -4,7 +4,7 @@
 
 ## Statement 声明
 
-This project has nothing to do with religion. 本项目与宗教无关。
+This project has nothing to do with sanjigen. 本项目与三次元无关。
 
 
 
