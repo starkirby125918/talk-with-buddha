@@ -3,7 +3,7 @@
 $("#error-alert").hide();
 $("#copy-alert").hide();
 
-var password = "takuron.top";
+var password = "nijigenN0.1";
 
 String.prototype.replaceAll = function (s1, s2) {
   var reg = new RegExp(s1, "g");
@@ -18,7 +18,7 @@ function encrypt() {
     $("#error-alert").show();
     $("#copy-alert").hide();
     $("#error-alert").text(
-      "无言者，纵真神再临，亦不可渡。（请输入待加密的明文）"
+      "桥都麻袋 难道人与人直接就不能相互理解吗 呐（请输入待加密的明文）"
     );
   } else {
     if (key.length < 1) {
@@ -39,14 +39,14 @@ function decrypt() {
     $("#error-alert").show();
     $("#copy-alert").hide();
     $("#error-alert").text(
-      "无言者，纵真神再临，亦不可渡。（请输入待解密的密文）"
+      "桥都麻袋 难道人与人直接就不能相互理解吗 呐（请输入待解密的密文）"
     );
   } else {
     if (msg.substring(0, 4) != "呐呐呐，") {
       $("#error-alert").show();
       $("#copy-alert").hide();
       $("#error-alert").text(
-        "施主可曾记得此为何高僧所言？（不是佛语，请确定密文来源本网站并且密文以“佛又曰：开头”）"
+        "搜噶 你们已经不喜欢了啊 真是冷酷的人呢（不是二次元语录，请确定密文来源本网站并且密文以“呐呐呐，开头”）"
       );
     } else {
       if (key.length < 1) {
@@ -60,7 +60,7 @@ function decrypt() {
         $("#error-alert").show();
         $("#copy-alert").hide();
         $("#error-alert").text(
-          "施主可曾记得此为何高僧所言？（佛语有误，请确定密钥正确并未被篡改）"
+          "果咩纳塞 让你看到不愉快的东西了 像我这样的人 果然消失就好了呢（二次元语录有误，请确定密愛言葉正确并未被篡改）"
         );
       } finally {
         $("#text-encryped").val(str);
@@ -83,8 +83,8 @@ function togod(msg, key) {
   str = str.substring(10);
 
   str = str.replaceAll("e", "哒");
-  str = str.replaceAll("E", "Ω");
-  str = str.replaceAll("t", "閨");
+  str = str.replaceAll("E", "幼驯染");
+  str = str.replaceAll("t", "♂");
   str = str.replaceAll("T", "呢");
   str = str.replaceAll("a", "大丈夫");
   str = str.replaceAll("A", "喵");
@@ -98,7 +98,7 @@ function togod(msg, key) {
   str = str.replaceAll("S", "哟");
   str = str.replaceAll("h", "☆");
   str = str.replaceAll("H", "★");
-  str = str.replaceAll("r", "Σ");
+  str = str.replaceAll("r", "邪王真眼");
   str = str.replaceAll("R", "罪");
   str = str.replaceAll("d", "米娜");
   str = str.replaceAll("D", "桑");
@@ -108,7 +108,7 @@ function togod(msg, key) {
   str = str.replaceAll("C", "诶");
   str = str.replaceAll("u", "多西忒");
   str = str.replaceAll("U", "命");
-  str = str.replaceAll("m", "ε");
+  str = str.replaceAll("m", "欸");
   str = str.replaceAll("M", "啊诺");
   str = str.replaceAll("w", "嘛");
   str = str.replaceAll("W", "呀");
@@ -143,10 +143,10 @@ function togod(msg, key) {
   str = str.replaceAll("6", "娘");
   str = str.replaceAll("7", "推");
   str = str.replaceAll("8", "厨");
-  str = str.replaceAll("9", "α");
-  str = str.replaceAll("\\+", "β");
+  str = str.replaceAll("9", "花嫁");
+  str = str.replaceAll("\\+", "兄贵");
   str = str.replaceAll("/", "贴贴");
-  str = str.replaceAll("=", "γ");
+  str = str.replaceAll("=", "♀");
 
   return "呐呐呐，" + str;
 }
@@ -155,8 +155,8 @@ function toman(msg, key) {
   str = msg.substring(4);
 
   str = str.replaceAll("哒", "e");
-  str = str.replaceAll("Ω", "E");
-  str = str.replaceAll("閨", "t");
+  str = str.replaceAll("幼驯染", "E");
+  str = str.replaceAll("♂", "t");
   str = str.replaceAll("呢", "T");
   str = str.replaceAll("大丈夫", "a");
   str = str.replaceAll("喵", "A");
@@ -168,9 +168,9 @@ function toman(msg, key) {
   str = str.replaceAll("本当", "N");
   str = str.replaceAll("果咩纳塞", "s");
   str = str.replaceAll("哟", "S");
-  str = str.replaceAll("☆　", "h");
+  str = str.replaceAll("☆", "h");
   str = str.replaceAll("★", "H");
-  str = str.replaceAll("Σ", "r");
+  str = str.replaceAll("邪王真眼", "r");
   str = str.replaceAll("罪", "R");
   str = str.replaceAll("米娜", "d");
   str = str.replaceAll("桑", "D");
@@ -180,7 +180,7 @@ function toman(msg, key) {
   str = str.replaceAll("诶", "C");
   str = str.replaceAll("多西忒", "u");
   str = str.replaceAll("命", "U");
-  str = str.replaceAll("ε", "m");
+  str = str.replaceAll("欸", "m");
   str = str.replaceAll("啊诺", "M");
   str = str.replaceAll("嘛", "w");
   str = str.replaceAll("呀", "W");
@@ -215,10 +215,10 @@ function toman(msg, key) {
   str = str.replaceAll("娘", "6");
   str = str.replaceAll("推", "7");
   str = str.replaceAll("厨", "8");
-  str = str.replaceAll("α", "9");
-  str = str.replaceAll("β", "+");
+  str = str.replaceAll("花嫁", "9");
+  str = str.replaceAll("兄贵", "+");
   str = str.replaceAll("贴贴", "/");
-  str = str.replaceAll("γ", "=");
+  str = str.replaceAll("♀", "=");
 
   var st = CryptoJS.AES.decrypt(`U2FsdGVkX1` + str, key).toString(
     CryptoJS.enc.Utf8
